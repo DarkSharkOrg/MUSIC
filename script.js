@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { title: 'YUM YUM - Slowed', artist: 'LXNGVX, Mc Gw', src: 'song5.mp3', video: 'A2.mp4' },
         { title: 'Ashi Ashi', artist: '6YNTHMANE, RXDXVIL', src: 'song6.mp3', video: 'A3.mp4' },
         { title: 'The Automotivo Infernal 1.0 - Purple - Slowed', artist: 'MRL, Mc Gw', src: 'song7.mp3', video: 'A1.mp4' },
-        { title: 'FUNK DO BALKAN', artist: '$werve, FXRCE, Mc Denny', src: 'song8.mp3', video: 'A2.mp4' } // New song added
+        { title: 'New Funk Song', artist: 'DJ Fresh', src: 'song8.mp3', video: 'A2.mp4' } // New song added
     ];
 
     let currentSongIndex = 0;

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;400;600&display=swap');
+
+:root {
+    /* Positioning variables for easy customization */
+    --controls-bottom-distance: 30px; /* Distance of controls from bottom */
+    --song-text-top: 10px; /* Reduced distance of text from video for better positioning */
+    --control-spacing: 20px; /* Spacing between control buttons */
+    --controls-left-offset: 0px; /* Shift all controls left or right */
+    --text-align: center; /* Adjust text alignment (left, center, right) */
+}
+
+body {
+    background-color: #121212;
+    font-family: "Public Sans", sans-serif;
+    color: var(--text-color);
+    overflow: hidden;
+}
+
+.dark {
+    transition: 1s;
+    --background: #100f0f;
+    --text-color: #fff; 
+}
+
+.light {
+    transition: 1s;
+    --background: #faf7f7;
+    --text-color: #121212; 
+}
+
+.container {    
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.phone {
+    background-color: var(--background);
+    color: var(--text-color);
+    height: 740px;
+    width: 360px;
+    border-radius: 25px;
+    box-shadow: rgba(104, 139, 255, 0.1) 0px 48px 100px 0px, rgba(17, 12, 46, 0.15) 0px 30px 100px 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#top-menu {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: inherit;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Positioning of song title and artist */
+#song-details {
+    margin-top: var(--song-text-top);
+    text-align: var(--text-align);
+    padding-bottom: 10px; /* Adjust space below text */
+}
+
+.song-title {
+    font-size: 1.4rem;
+}
+
+.artist {
+    font-size: 0.8rem;
+    color: inherit;
+    margin-top: 10px; /* Increased space between song title and artist */
+}
+
+#time-slider {
+    margin: 10px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-times {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#time-slider input {
+    width: 100%;
+}
+
+#song-controls {
+    position: absolute;
+    bottom: var(--controls-bottom-distance);
+    left: var(--controls-left-offset);
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px;
+}
+
+.button {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.2); /* Same for both themes */
+    color: var(--text-color);
+}
+
+/* Spacing between previous, play, and next buttons */
+#prev-btn, #next-btn {
+    margin: 0 var(--control-spacing);
+}
+
+.button:hover {
+    background-color: #779bff;
+    color: #fff;
+}

@@ -14,14 +14,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Songs array with title, artist, and audio file
     const songs = [
-        { title: 'BAIXO', artist: 'xxanteria', src: 'song1.mp3', video: 'A1.mp4' },
-        { title: 'Slide da Treme Melódica v2', artist: 'DJ FNK, Polaris Band', src: 'song2.mp3', video: 'A2.mp4' },
-        { title: 'RISADA CHUCK 01', artist: '-Prey', src: 'song3.mp3', video: 'A3.mp4' },
-        { title: 'BLUE HORIZON FUNK - SLOWED', artist: 'NXGHT!, DJ ANXVAR, DJ ZAP', src: 'song4.mp3', video: 'A1.mp4' },
-        { title: 'YUM YUM - Slowed', artist: 'LXNGVX, Mc Gw', src: 'song5.mp3', video: 'A2.mp4' },
-        { title: 'Ashi Ashi', artist: '6YNTHMANE, RXDXVIL', src: 'song6.mp3', video: 'A3.mp4' },
-        { title: 'The Automotivo Infernal 1.0 - Purple - Slowed', artist: 'MRL, Mc Gw', src: 'song7.mp3', video: 'A1.mp4' },
-        { title: 'New Funk Song', artist: 'DJ Fresh', src: 'song8.mp3', video: 'A2.mp4' } // New song added
+        { title: 'BAIXO', artist: 'xxanteria', src: 'SONG1.mp3', video: 'A1.mp4' },
+        { title: 'Slide da Treme Melódica v2', artist: 'DJ FNK, Polaris Band', src: 'SONG2.mp3', video: 'A2.mp4' },
+        { title: 'RISADA CHUCK 01', artist: '-Prey', src: 'SONG3.mp3', video: 'A3.mp4' },
+        { title: 'BLUE HORIZON FUNK - SLOWED', artist: 'NXGHT!, DJ ANXVAR, DJ ZAP', src: 'SONG4.mp3', video: 'A1.mp4' },
+        { title: 'YUM YUM - Slowed', artist: 'LXNGVX, Mc Gw', src: 'SONG5.mp3', video: 'A2.mp4' },
+        { title: 'Ashi Ashi', artist: '6YNTHMANE, RXDXVIL', src: 'SONG.mp3', video: 'A3.mp4' },
+        { title: 'The Automotivo Infernal 1.0 - Purple - Slowed', artist: 'MRL, Mc Gw', src: 'SONG7.mp3', video: 'A1.mp4' },
+        { title: 'New Funk Song', artist: 'DJ Fresh', src: 'SONG8.mp3', video: 'A2.mp4' } // New song added
     ];
 
     let currentSongIndex = 0;
